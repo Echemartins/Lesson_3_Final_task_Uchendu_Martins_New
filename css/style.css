@@ -53,7 +53,7 @@ table {
 /* Write your css below here */
 
 :root{
-	background-color:#ffffff ; 
+	background-color:#fff ; 
 	font-family: sans-serif;
 }
 
@@ -75,6 +75,7 @@ header{
 	grid-template-columns: 5fr 8fr 1fr 1fr;
 	align-items: center;
 }
+
 .bottom-header{
 	background-color: #154fae;
 	display: flex;
@@ -105,7 +106,6 @@ header{
 
 .frcc{
 	height: 30px;
-	/* margin-right: 100px; */
 	margin-left: 150px;
 }
 
@@ -165,6 +165,7 @@ header{
 
 .profile{
 	margin-top: 30px;
+	padding-bottom: 15px;
 	display: flex;
 	align-items: center;
 }
@@ -187,9 +188,6 @@ header{
 	font-size: 45px;
 }
 
-.profile{
-	padding-bottom: 15px;
-}
 
 .profile h2{
 	margin-left: 20px;
@@ -219,8 +217,12 @@ aside{
 .frontend img{
 	display: none;
 	padding-top: 10px;
-	height: 250px;
-	width: 410px;
+	\/height: 250px;
+	width: 100%;
+}
+
+iframe{
+	width: 100%;
 }
 
 .start{
@@ -314,7 +316,7 @@ footer{
 .footer-up1{
 	display: flex;
 	flex-direction: column;
-	padding: 40px  10px 40px 10px;
+	padding: 40px  10px;
 	justify-content: space-between;
 }
 
@@ -348,7 +350,6 @@ footer{
 
 
 @media screen and (width >= 450px){
-
 .trending-guides{
 	grid-template-columns: 2fr 2fr 2.5fr;
 	grid-template-rows: 1fr;
@@ -367,26 +368,16 @@ footer{
 		display: block;
 		margin-left: px;
 }
-	
 }
 
 @media screen  and (width >= 600px){
-	.frontend img{
-		height: 350px;
-		width: 500px;
-	}
-	
 	.thumbnail img{
 		height: 350px;
 		width: 500px;
 	}
-	
-	.video{
-		height: 350px;
-		width: 500px;
-	}
-
 }
+	
+	
 
 @media screen  and (width >= 800px) {
 	.footer-up{
@@ -394,40 +385,17 @@ footer{
 		grid-template-rows: 1fr;
 }
 
-.trending{
+	.trending{
 		display: none;
 		grid-auto-columns: 1/4;
 }
 
-.frontend img{
-	height: 400px;
-	width: 700px;
-}
-
-aside{
-	display: block;
-}
-
-.thumbnail img{
-	height: 400px;
-	width: 700px;
-
-}
-
-.video{
-	height: 400px;
-	width: 700px;
-
+	aside{
+		display: block;
 }
 }
-
 
 @media screen and ( width >= 1000px){
-	.frontend img{
-		height: 650px;
-		width: 1000px;
-	}
-
 	.container{
 		margin-left: 200px;
 		margin-right: 200px;
